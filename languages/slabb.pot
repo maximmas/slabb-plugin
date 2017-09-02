@@ -1,0 +1,369 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: ZET Theme Content Plugin\n"
+"POT-Creation-Date: 2016-08-25 09:06+0200\n"
+"PO-Revision-Date: 2016-08-25 09:06+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: zet-content-plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/about-post-type.php:5 includes/about-post-type.php:6
+msgid "About me"
+msgstr ""
+
+#: includes/about-post-type.php:7 includes/about-post-type.php:8
+msgid "Add new About me entry"
+msgstr ""
+
+#: includes/about-post-type.php:9
+msgid "Edit About me entry"
+msgstr ""
+
+#: includes/about-post-type.php:10
+msgid "New About me entry"
+msgstr ""
+
+#: includes/about-post-type.php:11
+msgid "All About me entries"
+msgstr ""
+
+#: includes/about-post-type.php:12
+msgid "View About me entry"
+msgstr ""
+
+#: includes/about-post-type.php:13
+msgid "Search About me entry"
+msgstr ""
+
+#: includes/about-post-type.php:14
+msgid "Not About me entries found"
+msgstr ""
+
+#: includes/about-post-type.php:15
+msgid "No About me entries found in Trash"
+msgstr ""
+
+#: includes/about-post-type.php:17
+msgid "ABOUT ME"
+msgstr ""
+
+#: includes/contact-post-type.php:5 includes/contact-post-type.php:6
+msgid "contact"
+msgstr ""
+
+#: includes/contact-post-type.php:7 includes/contact-post-type.php:8
+msgid "Add new Contact entry"
+msgstr ""
+
+#: includes/contact-post-type.php:9
+msgid "Edit Contact entry"
+msgstr ""
+
+#: includes/contact-post-type.php:10
+msgid "New Contact entry"
+msgstr ""
+
+#: includes/contact-post-type.php:11
+msgid "All Contact entries"
+msgstr ""
+
+#: includes/contact-post-type.php:12
+msgid "View Contact entry"
+msgstr ""
+
+#: includes/contact-post-type.php:13
+msgid "Search Contact entry"
+msgstr ""
+
+#: includes/contact-post-type.php:14
+msgid "Not Contact entries found"
+msgstr ""
+
+#: includes/contact-post-type.php:15
+msgid "No Contact entries found in Trash"
+msgstr ""
+
+#: includes/contact-post-type.php:17
+msgid "CONTACT"
+msgstr ""
+
+#: includes/edu-post-type.php:5 includes/edu-post-type.php:6
+msgid "education"
+msgstr ""
+
+#: includes/edu-post-type.php:7 includes/edu-post-type.php:8
+msgid "Add new Education entry"
+msgstr ""
+
+#: includes/edu-post-type.php:9
+msgid "Edit Education entry"
+msgstr ""
+
+#: includes/edu-post-type.php:10
+msgid "New Education entry"
+msgstr ""
+
+#: includes/edu-post-type.php:11
+msgid "All Education entries"
+msgstr ""
+
+#: includes/edu-post-type.php:12
+msgid "View Education entry"
+msgstr ""
+
+#: includes/edu-post-type.php:13
+msgid "Search Education entry"
+msgstr ""
+
+#: includes/edu-post-type.php:14
+msgid "Not Education entries found"
+msgstr ""
+
+#: includes/edu-post-type.php:15 includes/portfolio-post-type.php:15
+msgid "No Education entries found in Trash"
+msgstr ""
+
+#: includes/edu-post-type.php:17
+msgid "EDUCATION"
+msgstr ""
+
+#: includes/exp-post-type.php:5 includes/exp-post-type.php:6
+msgid "experience"
+msgstr ""
+
+#: includes/exp-post-type.php:7 includes/exp-post-type.php:8
+msgid "Add new Experience entry"
+msgstr ""
+
+#: includes/exp-post-type.php:9
+msgid "Edit Experience entry"
+msgstr ""
+
+#: includes/exp-post-type.php:10
+msgid "New Experience entry"
+msgstr ""
+
+#: includes/exp-post-type.php:11
+msgid "All Experience entries"
+msgstr ""
+
+#: includes/exp-post-type.php:12
+msgid "View Experience entry"
+msgstr ""
+
+#: includes/exp-post-type.php:13
+msgid "Search Experience entry"
+msgstr ""
+
+#: includes/exp-post-type.php:14
+msgid "Not Experience entries found"
+msgstr ""
+
+#: includes/exp-post-type.php:15
+msgid "No Experience entries found in Trash"
+msgstr ""
+
+#: includes/exp-post-type.php:17
+msgid "EXPERIENCE"
+msgstr ""
+
+#: includes/knowledge-post-type.php:5 includes/knowledge-post-type.php:6
+msgid "Knowledge"
+msgstr ""
+
+#: includes/knowledge-post-type.php:7 includes/knowledge-post-type.php:8
+msgid "Add new Knowledge entry"
+msgstr ""
+
+#: includes/knowledge-post-type.php:9
+msgid "Edit Knowledge entry"
+msgstr ""
+
+#: includes/knowledge-post-type.php:10
+msgid "New Knowledge entry"
+msgstr ""
+
+#: includes/knowledge-post-type.php:11
+msgid "All Knowledge entries"
+msgstr ""
+
+#: includes/knowledge-post-type.php:12
+msgid "View Knowledge entry"
+msgstr ""
+
+#: includes/knowledge-post-type.php:13
+msgid "Search Knowledge entry"
+msgstr ""
+
+#: includes/knowledge-post-type.php:14
+msgid "Not Knowledge entries found"
+msgstr ""
+
+#: includes/knowledge-post-type.php:15
+msgid "No Knowledge entries found in Trash"
+msgstr ""
+
+#: includes/knowledge-post-type.php:17
+msgid "KNOWLEDGE"
+msgstr ""
+
+#: includes/language-post-type.php:5
+msgid "language"
+msgstr ""
+
+#: includes/language-post-type.php:6
+msgid "Language"
+msgstr ""
+
+#: includes/language-post-type.php:7 includes/language-post-type.php:8
+msgid "Add new Language entry"
+msgstr ""
+
+#: includes/language-post-type.php:9
+msgid "Edit Language entry"
+msgstr ""
+
+#: includes/language-post-type.php:10
+msgid "New Language entry"
+msgstr ""
+
+#: includes/language-post-type.php:11
+msgid "All Language entries"
+msgstr ""
+
+#: includes/language-post-type.php:12
+msgid "View Language entry"
+msgstr ""
+
+#: includes/language-post-type.php:13
+msgid "Search Language entry"
+msgstr ""
+
+#: includes/language-post-type.php:14
+msgid "Not Language entries found"
+msgstr ""
+
+#: includes/language-post-type.php:15
+msgid "No Language entries found in Trash"
+msgstr ""
+
+#: includes/language-post-type.php:17
+msgid "LANGUAGE SKILLS"
+msgstr ""
+
+#: includes/pf-post-type.php:5
+msgid "Professional skills"
+msgstr ""
+
+#: includes/pf-post-type.php:6
+msgid "Professional skill"
+msgstr ""
+
+#: includes/pf-post-type.php:7 includes/pf-post-type.php:8
+msgid "Add new Professional skills entry"
+msgstr ""
+
+#: includes/pf-post-type.php:9
+msgid "Edit Professional skills"
+msgstr ""
+
+#: includes/pf-post-type.php:10
+msgid "New Professional skills entry"
+msgstr ""
+
+#: includes/pf-post-type.php:11
+msgid "All Professional skills entries"
+msgstr ""
+
+#: includes/pf-post-type.php:12
+msgid "View Professional skills entry"
+msgstr ""
+
+#: includes/pf-post-type.php:13
+msgid "Search Professional skills entry"
+msgstr ""
+
+#: includes/pf-post-type.php:14
+msgid "Not Professional skills entries found"
+msgstr ""
+
+#: includes/pf-post-type.php:15
+msgid "No Professional skills entries found in Trash"
+msgstr ""
+
+#: includes/pf-post-type.php:17
+msgid "PROFESSIONAL SKILLS"
+msgstr ""
+
+#: includes/portfolio-post-type.php:5 includes/portfolio-post-type.php:6
+msgid "portfolio"
+msgstr ""
+
+#: includes/portfolio-post-type.php:7 includes/portfolio-post-type.php:8
+msgid "Add new Portfolio entry"
+msgstr ""
+
+#: includes/portfolio-post-type.php:9
+msgid "Edit Portfolio entry"
+msgstr ""
+
+#: includes/portfolio-post-type.php:10
+msgid "New Portfolio entry"
+msgstr ""
+
+#: includes/portfolio-post-type.php:11
+msgid "All Portfolio entries"
+msgstr ""
+
+#: includes/portfolio-post-type.php:12
+msgid "View Portfolio entry"
+msgstr ""
+
+#: includes/portfolio-post-type.php:13
+msgid "Search Portfolio entry"
+msgstr ""
+
+#: includes/portfolio-post-type.php:14
+msgid "Not Portfolio entries found"
+msgstr ""
+
+#: includes/portfolio-post-type.php:17
+msgid "PORTFOLIO"
+msgstr ""
+
+#: zet-content-plugin.php:71
+msgid "Blog Page"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ZET Theme Content Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://zet.netgon.ru"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Create a Custom posts for ZET Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Netgon Team"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://netgon.ru"
+msgstr ""
