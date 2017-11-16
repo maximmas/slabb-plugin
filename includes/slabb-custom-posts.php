@@ -91,7 +91,6 @@ function slabb_package_post_type(){
 		'show_in_nav_menus'		=> false,
 		'query_var' 			=> true,
 		'menu_position' 		=> 108,
-		//'taxonomies' 			=> array( 'slabb_tax' ),
 		'supports' 				=> array( 'title' )
 	);
 	register_post_type( 'slabb_package', $data );
@@ -123,7 +122,6 @@ function slabb_service_post_type(){
 		'show_in_nav_menus'		=> false,
 		'query_var' 			=> true,
 		'menu_position' 		=> 108,
-		//'taxonomies' 			=> array( 'slabb_tax' ),
 		'supports' 				=> array( 'title', 'thumbnail' )
 	);
 	register_post_type( 'slabb_service', $data );

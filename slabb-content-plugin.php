@@ -1,17 +1,17 @@
 <?php
 /*
-Plugin Name: Slabb Theme Content Plugin
+Plugin Name: Slabb Theme Plugin
 Plugin URI: 
-Description: Create a Custom posts for Slabb Theme
+Description: Create Custom taxonomy and Custom post types for the Slabb Theme
 Version: 1.0
-Author: 
-Author URI: 
+Author: GrawixThemes
+Author URI: http://slabb-wp.themes.grawix.com/
 License: GPLv2
 Text domain: slabb
 Domain Path: /languages
 */
 
-/*  Copyright 2016  Netgon Team  (email : support@netgon.ru)
+/*  Copyright 2017  GrawixThemes
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -27,8 +27,10 @@ Domain Path: /languages
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+    
 require_once( ABSPATH . '/wp-admin/includes/taxonomy.php' );
 require_once( plugin_dir_path( __FILE__ ) . '/includes/slabb-custom-posts.php' );
+
 
 // create custom taxonomy
 add_action( 'init', 'slabb_add_tax', 0 );
@@ -56,35 +58,6 @@ function slabb_add_tax() {
     );
     register_taxonomy( 'slabb_projects_tax', array( 'slabb_project' ), $args );
 }
-
-// add custom categories
-//add_action( 'init', 'slabb_categories' );
-function slabb_categories(){
-
-    wp_insert_category( array(
-                        'cat_name'              => 'slabb_description',
-                        'category_description'  => 'Category for resume page posts with text content',
-                        'category_nicename'     => 'slabb_description',
-                        'taxonomy'              => 'slabb_tax'
-                        ) );
-
-    wp_insert_category( array( 
-                        'cat_name'              => 'slabb_item',
-                        'category_description'  => 'Category for resume page posts with item content',
-                        'category_nicename'     => 'slabb_item',
-                        'taxonomy'              => 'slabb_tax'
-                        ) );
-
-    $slabb_desc_id = get_term_by( 'name', 'slabb_description', 'slabb_tax' );
-    $slabb_item_id = get_term_by( 'name', 'slabb_item', 'slabb_tax' );
-
-    $GLOBALS[ "slabb_cat_description_id" ] = $slabb_desc_id->term_id;
-    $GLOBALS[ "slabb_cat_item_id" ] = $slabb_item_id->term_id; 
-
-};
-
-
-
 
 // create custom posts
 add_action( 'init', 'slabb_custom_posts' );
@@ -118,36 +91,66 @@ function slabb_show_contactform(){
     return $slabb_form;
 };
 
+function slabb_show_popupform(){
+    $slabb_form = '<form class="form">';
+    $slabb_form .= '<div class="form__item">';
+    $slabb_form .= '<input id="contacts-author_p" class="name required input input_placeholder" type="text" name="name">';
+    $slabb_form .= '<label class="label_placeholder label_required" for="contacts-author_p">%1$s</label>';
+    $slabb_form .= '</div>';
+    $slabb_form .= '<div class="form__item">';
+    $slabb_form .= '<input id="contacts-email_p" class="email required input input_placeholder" type="email" name="email">';
+    $slabb_form .= '<label class="label_placeholder label_required" for="contacts-email_p">%2$s</label>';
+    $slabb_form .= '</div>';
+    $slabb_form .= '<div class="form__item">';
+    $slabb_form .= '<input id="contacts-subject" class="subject required input input_placeholder" type="text" name="subject">';
+    $slabb_form .= '<label class="label_placeholder label_required" for="contacts-subject">%3$s</label>';
+    $slabb_form .= '</div>';
+    $slabb_form .= '<div class="form__item">';
+    $slabb_form .= '<textarea id="contacts-message_p" class="message input input_placeholder" name="message"></textarea>';
+    $slabb_form .= '<label class="label_placeholder" for="contacts-message_p">%4$s</label>';
+    $slabb_form .= '</div>';
+    $slabb_form .= '<div class="form__item">';
+    $slabb_form .= '<button class="btn btn_cta btn_wide" type="submit">%5$s</button>';
+    $slabb_form .= '</div>';
+    $slabb_form .= '</form>';
+
+    return $slabb_form;
+};
+
+
 // sendmail handler
 add_action( 'wp_ajax_sendmail', 'slabb_sendmail_contact' );
 add_action( 'wp_ajax_nopriv_sendmail', 'slabb_sendmail_contact' );
 function slabb_sendmail_contact(){
-     $slabb_settings_options    = fw_get_db_settings_option();
-     $slabb_recepient           = $slabb_settings_options['email'];
-     $slabb_subject             = esc_html__( 'New contact from ', 'slabb' ) . get_bloginfo( 'name' );
-     $slabb_charset             = get_bloginfo( 'charset' );
+    $slabb_settings_options    = fw_get_db_settings_option();
+    $slabb_recepient           = $slabb_settings_options['email'];
+    $slabb_subject             = esc_html__( 'New contact from ', 'slabb' ) . get_bloginfo( 'name' );
+    $slabb_charset             = get_bloginfo( 'charset' );
 
-     $slabb_visitor_name        = sanitize_text_field( $_POST['name'] );
-     $slabb_visitor_email       = sanitize_email( $_POST['email'] );
-     $slabb_visitor_message     = sanitize_text_field( $_POST['message'] );
+    $slabb_visitor_name        = sanitize_text_field( $_POST['name'] );
+    $slabb_visitor_email       = sanitize_email( $_POST['email'] );
+    $slabb_visitor_message     = sanitize_text_field( $_POST['message'] );
+    $slabb_visitor_subject     = sanitize_text_field( $_POST['subject'] );
+    $slabb_subject             = ( $slabb_visitor_subject ) ? $slabb_visitor_subject : $slabb_subject;
+
        
-     $slabb_recepient   = ( !empty( $slabb_recepient ) ) ? $slabb_recepient : get_bloginfo( 'admin_email' );
-     $slabb_message     = ( !empty( $slabb_visitor_message ) ) ? $slabb_visitor_message : esc_html__( 'no message' , 'slabb' );
+    $slabb_recepient   = ( empty( $slabb_recepient ) ) ? get_bloginfo( 'admin_email' ) : $slabb_recepient;
+    $slabb_message     = ( empty( $slabb_visitor_message ) ) ? esc_html__( 'no message' , 'slabb' ) : $slabb_visitor_message;
 
-     $slabb_msg = esc_html__( 'Name: ', 'slabb' ) .  $slabb_visitor_name . '<br><br>';
-     $slabb_msg .= esc_html__( 'Email: ', 'slabb' ) .  $slabb_visitor_email . '<br><br>';
-     $slabb_msg .= esc_html__( 'Message: ', 'slabb' ) .  $slabb_message;
+    $slabb_msg = esc_html__( 'Name: ', 'slabb' ) .  $slabb_visitor_name . '<br><br>';
+    $slabb_msg .= esc_html__( 'Email: ', 'slabb' ) .  $slabb_visitor_email . '<br><br>';
+    $slabb_msg .= esc_html__( 'Message: ', 'slabb' ) .  $slabb_message;
     
-     add_filter( 'wp_mail_from', 'slabb_from_email' );
-     add_filter( 'wp_mail_from_name', 'slabb_from_name' );
-     function slabb_from_name( $name ) { return get_bloginfo('name'); };
-     function slabb_from_email( $email ) {
+    add_filter( 'wp_mail_from', 'slabb_from_email' );
+    add_filter( 'wp_mail_from_name', 'slabb_from_name' );
+    function slabb_from_name( $name ) { return get_bloginfo('name'); };
+    function slabb_from_email( $email ) {
         $slabb_opt              = fw_get_db_settings_option();
         $slabb_replace_email    =  ( !empty( $slabb_opt['email'] ) ) ? $slabb_opt['email'] : get_bloginfo( 'admin_email' );
         return $slabb_replace_email; 
   };
 
-     wp_mail( $slabb_recepient, $slabb_subject, $slabb_msg, "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"UTF-8\"");
+    wp_mail( $slabb_recepient, $slabb_subject, $slabb_msg, "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"UTF-8\"");
       wp_die();   
 };
 

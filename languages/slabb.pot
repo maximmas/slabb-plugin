@@ -2,17 +2,18 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: ZET Theme Content Plugin\n"
-"POT-Creation-Date: 2016-08-25 09:06+0200\n"
-"PO-Revision-Date: 2016-08-25 09:06+0200\n"
+"Project-Id-Version: Slabb Theme Content Plugin\n"
+"POT-Creation-Date: 2017-11-15 21:46+0200\n"
+"PO-Revision-Date: 2017-11-15 21:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: zet-content-plugin.php\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: slabb-content-plugin.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -20,350 +21,258 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/about-post-type.php:5 includes/about-post-type.php:6
-msgid "About me"
+#: includes/slabb-custom-posts.php:5
+msgid "Projects"
 msgstr ""
 
-#: includes/about-post-type.php:7 includes/about-post-type.php:8
-msgid "Add new About me entry"
+#: includes/slabb-custom-posts.php:6
+msgid "Project"
 msgstr ""
 
-#: includes/about-post-type.php:9
-msgid "Edit About me entry"
+#: includes/slabb-custom-posts.php:7 includes/slabb-custom-posts.php:8
+msgid "Add new Projects entry"
 msgstr ""
 
-#: includes/about-post-type.php:10
-msgid "New About me entry"
+#: includes/slabb-custom-posts.php:9
+msgid "Edit Projects entry"
 msgstr ""
 
-#: includes/about-post-type.php:11
-msgid "All About me entries"
+#: includes/slabb-custom-posts.php:10
+msgid "New Projects entry"
 msgstr ""
 
-#: includes/about-post-type.php:12
-msgid "View About me entry"
+#: includes/slabb-custom-posts.php:11
+msgid "All Projects entries"
 msgstr ""
 
-#: includes/about-post-type.php:13
-msgid "Search About me entry"
+#: includes/slabb-custom-posts.php:12
+msgid "View Projects entry"
 msgstr ""
 
-#: includes/about-post-type.php:14
-msgid "Not About me entries found"
+#: includes/slabb-custom-posts.php:13
+msgid "Search Projects entry"
 msgstr ""
 
-#: includes/about-post-type.php:15
-msgid "No About me entries found in Trash"
+#: includes/slabb-custom-posts.php:14
+msgid "Not Projects entries found"
 msgstr ""
 
-#: includes/about-post-type.php:17
-msgid "ABOUT ME"
+#: includes/slabb-custom-posts.php:15
+msgid "No Projects entries found in Trash"
 msgstr ""
 
-#: includes/contact-post-type.php:5 includes/contact-post-type.php:6
-msgid "contact"
+#: includes/slabb-custom-posts.php:17
+msgid "PROJECTS"
 msgstr ""
 
-#: includes/contact-post-type.php:7 includes/contact-post-type.php:8
-msgid "Add new Contact entry"
+#: includes/slabb-custom-posts.php:38
+msgid "Testimonials"
 msgstr ""
 
-#: includes/contact-post-type.php:9
-msgid "Edit Contact entry"
+#: includes/slabb-custom-posts.php:39
+msgid "Testimonial"
 msgstr ""
 
-#: includes/contact-post-type.php:10
-msgid "New Contact entry"
+#: includes/slabb-custom-posts.php:40 includes/slabb-custom-posts.php:41
+msgid "Add new Testimonials entry"
 msgstr ""
 
-#: includes/contact-post-type.php:11
-msgid "All Contact entries"
+#: includes/slabb-custom-posts.php:42
+msgid "Edit Testimonials entry"
 msgstr ""
 
-#: includes/contact-post-type.php:12
-msgid "View Contact entry"
+#: includes/slabb-custom-posts.php:43
+msgid "New Testimonials entry"
 msgstr ""
 
-#: includes/contact-post-type.php:13
-msgid "Search Contact entry"
+#: includes/slabb-custom-posts.php:44
+msgid "All Testimonials entries"
 msgstr ""
 
-#: includes/contact-post-type.php:14
-msgid "Not Contact entries found"
+#: includes/slabb-custom-posts.php:45
+msgid "View Testimonials entry"
 msgstr ""
 
-#: includes/contact-post-type.php:15
-msgid "No Contact entries found in Trash"
+#: includes/slabb-custom-posts.php:46
+msgid "Search Testimonials entry"
 msgstr ""
 
-#: includes/contact-post-type.php:17
-msgid "CONTACT"
+#: includes/slabb-custom-posts.php:47
+msgid "Not Testimonials entries found"
 msgstr ""
 
-#: includes/edu-post-type.php:5 includes/edu-post-type.php:6
-msgid "education"
+#: includes/slabb-custom-posts.php:48
+msgid "No Testimonials entries found in Trash"
 msgstr ""
 
-#: includes/edu-post-type.php:7 includes/edu-post-type.php:8
-msgid "Add new Education entry"
+#: includes/slabb-custom-posts.php:50
+msgid "TESTIMONIALS"
 msgstr ""
 
-#: includes/edu-post-type.php:9
-msgid "Edit Education entry"
+#: includes/slabb-custom-posts.php:70
+msgid "Packages"
 msgstr ""
 
-#: includes/edu-post-type.php:10
-msgid "New Education entry"
+#: includes/slabb-custom-posts.php:71
+msgid "Package"
 msgstr ""
 
-#: includes/edu-post-type.php:11
-msgid "All Education entries"
+#: includes/slabb-custom-posts.php:72 includes/slabb-custom-posts.php:73
+msgid "Add new Packages entry"
 msgstr ""
 
-#: includes/edu-post-type.php:12
-msgid "View Education entry"
+#: includes/slabb-custom-posts.php:74
+msgid "Edit Packages entry"
 msgstr ""
 
-#: includes/edu-post-type.php:13
-msgid "Search Education entry"
+#: includes/slabb-custom-posts.php:75
+msgid "New Packages entry"
 msgstr ""
 
-#: includes/edu-post-type.php:14
-msgid "Not Education entries found"
+#: includes/slabb-custom-posts.php:76
+msgid "All Packages entries"
 msgstr ""
 
-#: includes/edu-post-type.php:15 includes/portfolio-post-type.php:15
-msgid "No Education entries found in Trash"
+#: includes/slabb-custom-posts.php:77
+msgid "View Packages entry"
 msgstr ""
 
-#: includes/edu-post-type.php:17
-msgid "EDUCATION"
+#: includes/slabb-custom-posts.php:78
+msgid "Search Packages entry"
 msgstr ""
 
-#: includes/exp-post-type.php:5 includes/exp-post-type.php:6
-msgid "experience"
+#: includes/slabb-custom-posts.php:79
+msgid "Not Packages entries found"
 msgstr ""
 
-#: includes/exp-post-type.php:7 includes/exp-post-type.php:8
-msgid "Add new Experience entry"
+#: includes/slabb-custom-posts.php:80
+msgid "No Packages entries found in Trash"
 msgstr ""
 
-#: includes/exp-post-type.php:9
-msgid "Edit Experience entry"
+#: includes/slabb-custom-posts.php:82
+msgid "PACKAGES"
 msgstr ""
 
-#: includes/exp-post-type.php:10
-msgid "New Experience entry"
+#: includes/slabb-custom-posts.php:102
+msgid "Services"
 msgstr ""
 
-#: includes/exp-post-type.php:11
-msgid "All Experience entries"
+#: includes/slabb-custom-posts.php:103
+msgid "Service"
 msgstr ""
 
-#: includes/exp-post-type.php:12
-msgid "View Experience entry"
+#: includes/slabb-custom-posts.php:104 includes/slabb-custom-posts.php:105
+msgid "Add new Services entry"
 msgstr ""
 
-#: includes/exp-post-type.php:13
-msgid "Search Experience entry"
+#: includes/slabb-custom-posts.php:106
+msgid "Edit Services entry"
 msgstr ""
 
-#: includes/exp-post-type.php:14
-msgid "Not Experience entries found"
+#: includes/slabb-custom-posts.php:107
+msgid "New Services entry"
 msgstr ""
 
-#: includes/exp-post-type.php:15
-msgid "No Experience entries found in Trash"
+#: includes/slabb-custom-posts.php:108
+msgid "All Services entries"
 msgstr ""
 
-#: includes/exp-post-type.php:17
-msgid "EXPERIENCE"
+#: includes/slabb-custom-posts.php:109
+msgid "View Services entry"
 msgstr ""
 
-#: includes/knowledge-post-type.php:5 includes/knowledge-post-type.php:6
-msgid "Knowledge"
+#: includes/slabb-custom-posts.php:110
+msgid "Search Services entry"
 msgstr ""
 
-#: includes/knowledge-post-type.php:7 includes/knowledge-post-type.php:8
-msgid "Add new Knowledge entry"
+#: includes/slabb-custom-posts.php:111
+msgid "Not Services entries found"
 msgstr ""
 
-#: includes/knowledge-post-type.php:9
-msgid "Edit Knowledge entry"
+#: includes/slabb-custom-posts.php:112
+msgid "No Services entries found in Trash"
 msgstr ""
 
-#: includes/knowledge-post-type.php:10
-msgid "New Knowledge entry"
+#: includes/slabb-custom-posts.php:114
+msgid "SERVICES"
 msgstr ""
 
-#: includes/knowledge-post-type.php:11
-msgid "All Knowledge entries"
+#: slabb-content-plugin.php:37
+msgid "Projects categories"
 msgstr ""
 
-#: includes/knowledge-post-type.php:12
-msgid "View Knowledge entry"
+#: slabb-content-plugin.php:38
+msgid "Projects category"
 msgstr ""
 
-#: includes/knowledge-post-type.php:13
-msgid "Search Knowledge entry"
+#: slabb-content-plugin.php:39 slabb-content-plugin.php:40
+msgid "Categories"
 msgstr ""
 
-#: includes/knowledge-post-type.php:14
-msgid "Not Knowledge entries found"
+#: slabb-content-plugin.php:41
+msgid "Parent Projects category"
 msgstr ""
 
-#: includes/knowledge-post-type.php:15
-msgid "No Knowledge entries found in Trash"
+#: slabb-content-plugin.php:42
+msgid "Parent Project category:"
 msgstr ""
 
-#: includes/knowledge-post-type.php:17
-msgid "KNOWLEDGE"
+#: slabb-content-plugin.php:43
+msgid "New category"
 msgstr ""
 
-#: includes/language-post-type.php:5
-msgid "language"
+#: slabb-content-plugin.php:44
+msgid "Add new category"
 msgstr ""
 
-#: includes/language-post-type.php:6
-msgid "Language"
+#: slabb-content-plugin.php:45
+msgid "Edit new category"
 msgstr ""
 
-#: includes/language-post-type.php:7 includes/language-post-type.php:8
-msgid "Add new Language entry"
+#: slabb-content-plugin.php:46
+msgid "Update category"
 msgstr ""
 
-#: includes/language-post-type.php:9
-msgid "Edit Language entry"
+#: slabb-content-plugin.php:47
+msgid "Search"
 msgstr ""
 
-#: includes/language-post-type.php:10
-msgid "New Language entry"
+#: slabb-content-plugin.php:48
+msgid "Add or remove category"
 msgstr ""
 
-#: includes/language-post-type.php:11
-msgid "All Language entries"
+#: slabb-content-plugin.php:49
+msgid "Find from most used"
 msgstr ""
 
-#: includes/language-post-type.php:12
-msgid "View Language entry"
+#: slabb-content-plugin.php:50
+msgid "Not found"
 msgstr ""
 
-#: includes/language-post-type.php:13
-msgid "Search Language entry"
+#: slabb-content-plugin.php:155
+msgid "New contact from "
 msgstr ""
 
-#: includes/language-post-type.php:14
-msgid "Not Language entries found"
+#: slabb-content-plugin.php:166
+msgid "no message"
 msgstr ""
 
-#: includes/language-post-type.php:15
-msgid "No Language entries found in Trash"
+#: slabb-content-plugin.php:168
+msgid "Name: "
 msgstr ""
 
-#: includes/language-post-type.php:17
-msgid "LANGUAGE SKILLS"
+#: slabb-content-plugin.php:169
+msgid "Email: "
 msgstr ""
 
-#: includes/pf-post-type.php:5
-msgid "Professional skills"
-msgstr ""
-
-#: includes/pf-post-type.php:6
-msgid "Professional skill"
-msgstr ""
-
-#: includes/pf-post-type.php:7 includes/pf-post-type.php:8
-msgid "Add new Professional skills entry"
-msgstr ""
-
-#: includes/pf-post-type.php:9
-msgid "Edit Professional skills"
-msgstr ""
-
-#: includes/pf-post-type.php:10
-msgid "New Professional skills entry"
-msgstr ""
-
-#: includes/pf-post-type.php:11
-msgid "All Professional skills entries"
-msgstr ""
-
-#: includes/pf-post-type.php:12
-msgid "View Professional skills entry"
-msgstr ""
-
-#: includes/pf-post-type.php:13
-msgid "Search Professional skills entry"
-msgstr ""
-
-#: includes/pf-post-type.php:14
-msgid "Not Professional skills entries found"
-msgstr ""
-
-#: includes/pf-post-type.php:15
-msgid "No Professional skills entries found in Trash"
-msgstr ""
-
-#: includes/pf-post-type.php:17
-msgid "PROFESSIONAL SKILLS"
-msgstr ""
-
-#: includes/portfolio-post-type.php:5 includes/portfolio-post-type.php:6
-msgid "portfolio"
-msgstr ""
-
-#: includes/portfolio-post-type.php:7 includes/portfolio-post-type.php:8
-msgid "Add new Portfolio entry"
-msgstr ""
-
-#: includes/portfolio-post-type.php:9
-msgid "Edit Portfolio entry"
-msgstr ""
-
-#: includes/portfolio-post-type.php:10
-msgid "New Portfolio entry"
-msgstr ""
-
-#: includes/portfolio-post-type.php:11
-msgid "All Portfolio entries"
-msgstr ""
-
-#: includes/portfolio-post-type.php:12
-msgid "View Portfolio entry"
-msgstr ""
-
-#: includes/portfolio-post-type.php:13
-msgid "Search Portfolio entry"
-msgstr ""
-
-#: includes/portfolio-post-type.php:14
-msgid "Not Portfolio entries found"
-msgstr ""
-
-#: includes/portfolio-post-type.php:17
-msgid "PORTFOLIO"
-msgstr ""
-
-#: zet-content-plugin.php:71
-msgid "Blog Page"
+#: slabb-content-plugin.php:170
+msgid "Message: "
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "ZET Theme Content Plugin"
-msgstr ""
-
-#. Plugin URI of the plugin/theme
-msgid "http://zet.netgon.ru"
+msgid "Slabb Theme Content Plugin"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Create a Custom posts for ZET Theme"
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Netgon Team"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "http://netgon.ru"
+msgid "Create a Custom posts for Slabb Theme"
 msgstr ""
