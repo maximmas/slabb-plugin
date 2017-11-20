@@ -5,7 +5,7 @@ Plugin URI:
 Description: Create Custom taxonomy and Custom post types for the Slabb Theme
 Version: 1.0
 Author: GrawixThemes
-Author URI: http://slabb-wp.themes.grawix.com/
+Author URI: https://themeforest.net/user/grawixthemes
 License: GPLv2
 Text domain: slabb
 Domain Path: /languages
